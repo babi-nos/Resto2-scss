@@ -1,0 +1,41 @@
+#main{
+    height: auto;
+
+    .part1{
+        // width: 100%;
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background: $color1;
+
+
+        .our-chef{
+            background: $color1;
+            margin: 20px;
+            border: 1px dashed $color4;
+
+            h2{
+                color: $color4;
+                font-family: $font1;
+                font-size: 2.5rem;
+                padding: 50px 0 0 0;
+            }
+
+            :nth-child(2){
+                position: relative;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-family: $font2;
+                font-size: 1.5rem;
+                top: -15px;
+
+            }
+
+        }
+
+        .picture{
+            background: url(/asset/img/store-01.jpg);
+        }
+
+    }
+}

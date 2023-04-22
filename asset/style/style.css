@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "font1";
+  src: url(../font/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(../font/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "font3";
+  src: url(../font/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  box-sizing: border-box;
+  background: #212020;
+  text-align: center;
+}
+
+header {
+  position: relative;
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  height: 100vh;
+  color: white;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 25px 0;
+}
+header nav p {
+  font-family: "font1", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+header nav .nav-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "font3", sans-serif;
+  font-size: 0.9rem;
+}
+header nav .nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .nav-right i {
+  padding: 0 10px;
+}
+header .title {
+  position: relative;
+  text-align: center;
+  top: 20%;
+  transform: translateY(-20%);
+}
+header .title :nth-child(1) {
+  font-family: "font1", sans-serif;
+  font-size: 3rem;
+  color: #856652;
+}
+header .title h1 {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-family: "font2", sans-serif;
+  font-size: 4rem;
+  top: -10px;
+}
+header .title :last-child {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 8px;
+  padding: 25px;
+  color: rgba(255, 255, 255, 0.792);
+}
+
+#main {
+  height: auto;
+}
+#main .part1 {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: white;
+}
+#main .part1 .our-chef {
+  background: white;
+  margin: 20px;
+  border: 1px dashed #856652;
+}
+#main .part1 .our-chef h2 {
+  color: #856652;
+  font-family: "font1", sans-serif;
+  font-size: 2.5rem;
+  padding: 50px 0 0 0;
+}
+#main .part1 .our-chef :nth-child(2) {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "font2", sans-serif;
+  font-size: 1.5rem;
+  top: -15px;
+}
+#main .part1 .picture {
+  background: url(/asset/img/store-01.jpg);
+}/*# sourceMappingURL=style.css.map */

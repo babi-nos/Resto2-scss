@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "font1";
+    src: url(../font/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "font2";
+    src: url(../font/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "font3";
+    src: url(../font/Roboto-Light.ttf);
+}
+
+@mixin dFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin lSpace{
+    letter-spacing: 8px;
+}
+
+$font1: "font1", sans-serif;
+$font2: "font2", sans-serif;
+$font3: "font3", sans-serif;
+$color1: white;
+$color2: #212020;
+$color3: #EEEDEF;
+$color4: #856652;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    box-sizing: border-box;
+    background: $color2;
+    text-align: center;
+}
+
+

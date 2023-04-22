@@ -1,0 +1,68 @@
+header{
+    position: relative;
+    background: url(../img/bg-slider-06.jpg) center/cover ;
+    height: 100vh;
+    color: $color1;
+
+
+    nav{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        padding: 25px 0;
+
+        p{
+            font-family: $font1;
+            font-size: 3rem;
+            font-weight: 900;
+        }
+
+        .nav-center{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-transform: uppercase;
+            font-family: $font3;
+            font-size: 0.9rem
+        }
+
+        .nav-right{
+            @include dFlex;
+            
+            i{
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .title{
+        position: relative;
+        text-align: center;
+        top: 20%;
+        transform: translateY(-20%);
+
+        :nth-child(1) {
+            font-family: $font1;
+            font-size: 3rem;
+            color: $color4;
+        }
+        h1{
+            position: relative;
+            text-transform: uppercase;
+            @include lSpace;
+            font-family: $font2;
+            font-size: 4rem;
+            top: -10px;
+        }
+        :last-child{
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            @include lSpace;
+            padding: 25px;
+            color: rgba(255, 255, 255, 0.792);
+        }
+    }
+
+}
