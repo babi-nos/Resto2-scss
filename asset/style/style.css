@@ -1,16 +1,20 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: "font1";
   src: url(../font/Allura-Regular.ttf);
 }
+
 @font-face {
   font-family: "font2";
   src: url(../font/Poppins-Medium.ttf);
 }
+
 @font-face {
   font-family: "font3";
   src: url(../font/Roboto-Light.ttf);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +34,7 @@ header {
   min-height: 500px;
   color: white;
 }
+
 header nav {
   display: grid;
   grid-template-columns: 20% 60% 20%;
@@ -38,17 +43,20 @@ header nav {
   margin: auto;
   padding: 25px 0;
 }
+
 @media screen and (max-width: 900px) {
   header nav {
     grid-template-columns: 50% 50%;
     text-align: left;
   }
 }
+
 header nav p {
   font-family: "font1", sans-serif;
   font-size: 3rem;
   font-weight: 900;
 }
+
 header nav .nav-center {
   display: flex;
   justify-content: space-around;
@@ -57,42 +65,50 @@ header nav .nav-center {
   font-family: "font3", sans-serif;
   font-size: 0.9rem;
 }
+
 @media screen and (max-width: 900px) {
   header nav .nav-center {
     display: none;
   }
 }
+
 header nav .nav-right {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (max-width: 900px) {
   header nav .nav-right {
     position: relative;
     right: -50px;
   }
 }
+
 @media screen and (max-width: 500px) {
   header nav .nav-right {
     position: relative;
     right: 0px;
   }
 }
+
 header nav .nav-right i {
   padding: 0 10px;
 }
+
 header .title {
   position: relative;
   text-align: center;
   top: 20%;
   transform: translateY(-20%);
 }
+
 header .title :nth-child(1) {
   font-family: "font1", sans-serif;
   font-size: 3rem;
   color: rgb(166, 114, 69);
 }
+
 header .title h1 {
   position: relative;
   text-transform: uppercase;
@@ -101,11 +117,13 @@ header .title h1 {
   font-size: 4rem;
   top: -10px;
 }
+
 @media screen and (max-width: 900px) {
   header .title h1 {
     font-size: 2.5rem;
   }
 }
+
 header .title :last-child {
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -124,16 +142,19 @@ header .title :last-child {
   position: relative;
   background: #e4e4e4;
 }
+
 @media screen and (max-width: 900px) {
   .part1 {
     grid-template-columns: 100%;
   }
 }
+
 .part1 .our-chef {
   margin: 20px;
   border: 1px dashed rgb(166, 114, 69);
   position: relative;
 }
+
 .part1 .our-chef h2 {
   color: rgb(166, 114, 69);
   font-family: "font1", sans-serif;
@@ -141,6 +162,7 @@ header .title :last-child {
   position: relative;
   top: 20px;
 }
+
 .part1 .our-chef :nth-child(2) {
   position: relative;
   text-transform: uppercase;
@@ -149,9 +171,11 @@ header .title :last-child {
   font-size: 1.5rem;
   top: 0;
 }
+
 .part1 .our-chef img {
   padding: 15px 0 0 0;
 }
+
 .part1 .our-chef :nth-child(4) {
   position: absolute;
   top: 40%;
@@ -160,6 +184,7 @@ header .title :last-child {
   padding: 0 10px;
   font-family: "font3", sans-serif;
 }
+
 .part1 .our-chef .chef {
   position: absolute;
   bottom: 0;
@@ -167,23 +192,28 @@ header .title :last-child {
   transform: translateX(-50%);
   margin-bottom: 10px;
 }
+
 .part1 .our-chef .chef img {
   width: 30%;
   border-radius: 100px;
 }
+
 .part1 .our-chef .chef :nth-child(2) {
   text-transform: none;
   font-size: 1.5rem;
   font-weight: 100;
 }
+
 .part1 .our-chef .chef :nth-child(3) {
   text-transform: uppercase;
   font-family: "font2", sans-serif;
   color: #e4e4e4;
 }
+
 .part1 .picture {
   background: url(../img/store-01.jpg) center/cover;
 }
+
 @media screen and (max-width: 900px) {
   .part1 .picture {
     display: none;
@@ -198,6 +228,7 @@ header .title :last-child {
   background-position: bottom;
   padding-bottom: 150px;
 }
+
 @media screen and (max-width: 600px) {
   .part2 {
     background: url(../asset/img/bg-menu-01.jpg);
@@ -206,14 +237,17 @@ header .title :last-child {
     background-position: bottom center;
   }
 }
+
 .part2 .title-part2 {
   padding: 35px 0 0 0;
 }
+
 .part2 .title-part2 h3 {
   font-family: "font1", sans-serif;
   color: rgb(166, 114, 69);
   font-size: 2.5rem;
 }
+
 .part2 .list-menu {
   display: flex;
   justify-content: space-between;
@@ -222,21 +256,25 @@ header .title :last-child {
   color: white;
   padding: 15px 0 50px 0;
 }
+
 @media screen and (max-width: 900px) {
   .part2 .list-menu {
     width: 80%;
   }
 }
+
 @media screen and (max-width: 600px) {
   .part2 .list-menu {
     width: 90%;
   }
 }
+
 .part2 .list-menu li {
   padding: 15px 0;
   border-bottom: 1px solid white;
   font-family: "font3", sans-serif;
 }
+
 .part2 .menu {
   width: 60%;
   display: flex;
@@ -246,17 +284,20 @@ header .title :last-child {
   padding: 0 20px 20px;
   position: relative;
 }
+
 @media screen and (max-width: 900px) {
   .part2 .menu {
     width: 90%;
     padding: 0 0px 0px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .part2 .menu {
     display: block;
   }
 }
+
 .part2 .menu::before {
   position: absolute;
   content: "";
@@ -267,6 +308,7 @@ header .title :last-child {
   background: rgb(166, 114, 69);
   margin: auto;
 }
+
 .part2 .menu .items-menu {
   margin: auto;
   flex-basis: 48%;
@@ -277,25 +319,30 @@ header .title :last-child {
   padding: 25px 0px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.185);
 }
+
 .part2 .menu .items-menu img {
   border-radius: 100px;
   width: 75%;
 }
+
 .part2 .menu .items-menu .meal {
   text-align: left;
 }
+
 .part2 .menu .items-menu .meal h3 {
   font-family: "font3", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.95rem;
 }
+
 .part2 .menu .items-menu .meal p {
   font-family: "font3", sans-serif;
   font-weight: 100;
   font-size: 1rem;
   color: black;
 }
+
 .part2 .menu .items-menu p {
   color: rgb(166, 114, 69);
   font-family: "font2", sans-serif;
@@ -312,23 +359,27 @@ header .title :last-child {
   width: 80%;
   min-width: 550px;
 }
+
 @media screen and (max-width: 900px) {
   .part3 {
     display: block;
     width: 90%;
   }
 }
+
 @media screen and (max-width: 600px) {
   .part3 {
     width: 100%;
     min-width: 250px;
   }
 }
+
 .part3 .left {
   position: relative;
   background: black;
   padding: 20px;
 }
+
 .part3 .horraire {
   color: white;
   display: grid;
@@ -336,29 +387,35 @@ header .title :last-child {
   border: 1px dashed rgba(255, 255, 255, 0.703);
   height: 100%;
 }
+
 .part3 .horraire .logo {
   place-self: center;
 }
+
 .part3 .horraire .logo h4 {
   font-family: "font1", sans-serif;
   color: rgb(166, 114, 69);
   font-size: 2.5rem;
   font-weight: 100;
 }
+
 .part3 .horraire .logo p {
   font-size: 1.5rem;
   font-family: "font2", sans-serif;
   text-transform: uppercase;
   -webkit-margin-before: -0.5em;
-          margin-block-start: -0.5em;
+  margin-block-start: -0.5em;
 }
+
 .part3 .horraire .logo img {
   position: relative;
   top: 15px;
 }
+
 .part3 .horraire .infos {
   padding: 25px 0 0 0;
 }
+
 .part3 .horraire .infos h4 {
   text-transform: uppercase;
   color: rgb(166, 114, 69);
@@ -368,30 +425,36 @@ header .title :last-child {
   font-family: "font2", sans-serif;
   font-weight: 100;
 }
+
 .part3 .horraire .infos p {
   font-family: "font3", sans-serif;
   font-size: 0.8rem;
 }
+
 .part3 .reservation {
   background: #e4e4e4;
   display: grid;
   grid-template-rows: 40% 35% 25%;
   position: relative;
 }
+
 @media screen and (max-width: 900px) {
   .part3 .reservation {
     height: 600px;
     grid-template-rows: 30% 45% 25%;
   }
 }
+
 .part3 .reservation .title-reservation {
   place-self: center;
 }
+
 .part3 .reservation .title-reservation h4 {
   color: rgb(166, 114, 69);
   font-family: "font1", sans-serif;
   font-size: 2.1rem;
 }
+
 .part3 .reservation .title-reservation p {
   position: relative;
   font-family: "font2", sans-serif;
@@ -400,17 +463,20 @@ header .title :last-child {
   font-weight: 900;
   top: -15px;
 }
+
 .part3 .reservation .input-reservation {
   padding: 0 50px;
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
 }
+
 @media screen and (max-width: 900px) {
   .part3 .reservation .input-reservation {
     display: block;
     padding: 0 25px;
   }
 }
+
 .part3 .reservation .input-reservation .input input {
   border: none;
   border-bottom: 2px solid rgba(128, 128, 128, 0.296);
@@ -421,20 +487,25 @@ header .title :last-child {
   width: 80%;
   background: transparent;
 }
+
 @media screen and (max-width: 900px) {
   .part3 .reservation .input-reservation .input input {
     line-height: 25px;
   }
 }
+
 .part3 .reservation .input-reservation .black input::-moz-placeholder {
   color: rgb(0, 0, 0);
 }
+
 .part3 .reservation .input-reservation .black input::placeholder {
   color: rgb(0, 0, 0);
 }
+
 .part3 .reservation .btn {
   position: relative;
 }
+
 .part3 .reservation .btn button {
   position: absolute;
   top: 0%;
@@ -450,6 +521,7 @@ header .title :last-child {
   letter-spacing: 5px;
   font-size: 0.9rem;
 }
+
 @media screen and (max-width: 900px) {
   .part3 .reservation .btn button {
     top: 50%;
@@ -465,19 +537,23 @@ header .title :last-child {
   min-height: 600px;
   padding: 50px 0 50px 0;
 }
+
 @media screen and (max-width: 935px) {
   .part4 {
     display: none;
   }
 }
+
 .part4 .title-event {
   place-self: center;
 }
+
 .part4 .title-event h5 {
   color: rgb(166, 114, 69);
   font-family: "font1", sans-serif;
   font-size: 3rem;
 }
+
 .part4 .title-event p {
   position: relative;
   text-transform: uppercase;
@@ -487,6 +563,7 @@ header .title :last-child {
   color: white;
   top: -15px;
 }
+
 .part4 .evenements {
   display: grid;
   grid-template-columns: 58% 42%;
@@ -498,15 +575,18 @@ header .title :last-child {
   gap: 25px;
   padding: 35px 0 50px 0;
 }
+
 .part4 .evenements .event1 {
   grid-area: a;
   display: grid;
   grid-template-columns: 25% 75%;
 }
+
 .part4 .evenements .event1 .img {
   position: relative;
   background: url(../img/event-01.jpg) center/cover;
 }
+
 .part4 .evenements .event1 .img .date {
   position: absolute;
   left: 50%;
@@ -517,12 +597,14 @@ header .title :last-child {
   height: 75px;
   width: 75px;
 }
+
 .part4 .evenements .event1 .img .date :first-child {
   font-size: 1.2rem;
   font-family: "font2", sans-serif;
   font-weight: 900;
   padding: 10px 0 0 0;
 }
+
 .part4 .evenements .event1 .img .date :last-child {
   position: relative;
   font-size: 0.9rem;
@@ -530,12 +612,14 @@ header .title :last-child {
   font-weight: 100;
   top: -5px;
 }
+
 .part4 .evenements .event1 .infos {
   height: auto;
   background-color: #e4e4e4;
   text-align: left;
   padding: 0 0 0 35px;
 }
+
 .part4 .evenements .event1 .infos h5 {
   position: relative;
   font-size: 1.5rem;
@@ -543,11 +627,13 @@ header .title :last-child {
   padding: 35px 50px 35px 10px;
   font-weight: 100;
 }
+
 .part4 .evenements .event1 .infos :nth-child(2) {
   font-size: 1rem;
   font-family: "font3", sans-serif;
   color: rgba(0, 0, 0, 0.3490196078);
 }
+
 .part4 .evenements .event1 .infos :nth-child(3) {
   padding: 35px 0 0;
   font-size: 0.8rem;
@@ -556,11 +642,13 @@ header .title :last-child {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 .part4 .evenements .event2 {
   grid-area: b;
   background: url(../img/event-03.jpg) center/cover;
   padding: 30px;
 }
+
 .part4 .evenements .event2 .card-right {
   position: relative;
   background-color: #e4e4e4;
@@ -568,6 +656,7 @@ header .title :last-child {
   display: grid;
   grid-template-rows: 20% 80%;
 }
+
 .part4 .evenements .event2 .card-right .date {
   background: #212020;
   color: white;
@@ -575,12 +664,14 @@ header .title :last-child {
   width: 75px;
   margin: auto;
 }
+
 .part4 .evenements .event2 .card-right .date :first-child {
   font-size: 1.2rem;
   font-family: "font2", sans-serif;
   font-weight: 900;
   padding: 10px 0 0 0;
 }
+
 .part4 .evenements .event2 .card-right .date :last-child {
   position: relative;
   font-size: 0.9rem;
@@ -588,9 +679,11 @@ header .title :last-child {
   font-weight: 100;
   top: -5px;
 }
+
 .part4 .evenements .event2 .card-right .infos {
   height: auto;
 }
+
 .part4 .evenements .event2 .card-right .infos h5 {
   position: relative;
   font-size: 1.5rem;
@@ -598,11 +691,13 @@ header .title :last-child {
   padding: 50px 50px 0 50px;
   font-weight: 100;
 }
+
 .part4 .evenements .event2 .card-right .infos :nth-child(2) {
   font-size: 1.2rem;
   font-family: "font3", sans-serif;
   color: rgba(0, 0, 0, 0.3490196078);
 }
+
 .part4 .evenements .event2 .card-right .infos :nth-child(3) {
   padding: 85px 0 0;
   font-size: 1rem;
@@ -611,15 +706,18 @@ header .title :last-child {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 .part4 .evenements .event3 {
   grid-area: c;
   display: grid;
   grid-template-columns: 25% 75%;
 }
+
 .part4 .evenements .event3 .img {
   position: relative;
   background: url(../img/event-02.jpg) center/cover;
 }
+
 .part4 .evenements .event3 .img .date {
   position: absolute;
   left: 50%;
@@ -630,12 +728,14 @@ header .title :last-child {
   height: 75px;
   width: 75px;
 }
+
 .part4 .evenements .event3 .img .date :first-child {
   font-size: 1.2rem;
   font-family: "font2", sans-serif;
   font-weight: 900;
   padding: 10px 0 0 0;
 }
+
 .part4 .evenements .event3 .img .date :last-child {
   position: relative;
   font-size: 0.9rem;
@@ -643,12 +743,14 @@ header .title :last-child {
   font-weight: 100;
   top: -5px;
 }
+
 .part4 .evenements .event3 .infos {
   height: auto;
   background-color: #e4e4e4;
   text-align: left;
   padding: 0 0 0 35px;
 }
+
 .part4 .evenements .event3 .infos h5 {
   position: relative;
   font-size: 1.5rem;
@@ -656,11 +758,13 @@ header .title :last-child {
   padding: 35px 50px 35px 10px;
   font-weight: 100;
 }
+
 .part4 .evenements .event3 .infos :nth-child(2) {
   font-size: 1rem;
   font-family: "font3", sans-serif;
   color: rgba(0, 0, 0, 0.3490196078);
 }
+
 .part4 .evenements .event3 .infos :nth-child(3) {
   padding: 35px 0 0;
   font-size: 0.8rem;
@@ -675,6 +779,7 @@ header .title :last-child {
   position: relative;
   margin: 50px auto 0 auto;
 }
+
 .part5::before {
   position: absolute;
   content: "";
@@ -682,30 +787,34 @@ header .title :last-child {
   bottom: 0%;
   width: 100%;
   height: 55%;
-  background: url(../img/gmap.jpg);
+  background: url(../img/gmap.jpg) center/cover;
   background-size: cover 100% 50%;
   background-repeat: no-repeat;
   background-position: center;
   z-index: -2;
 }
+
 .part5 .conclusion {
   background: #e4e4e4;
   width: 70%;
   margin: auto;
   height: 350px;
 }
+
 @media screen and (max-width: 900px) {
   .part5 .conclusion {
     width: 90%;
     height: 370px;
   }
 }
+
 @media screen and (max-width: 900px) {
   .part5 .conclusion {
     width: 90%;
     height: 410px;
   }
 }
+
 .part5 .conclusion .note img {
   position: absolute;
   left: 50%;
@@ -713,28 +822,34 @@ header .title :last-child {
   border-radius: 100px;
   width: 80px;
 }
+
 .part5 .conclusion .note p {
   padding: 100px 100px;
   font-family: "font3", sans-serif;
 }
+
 @media screen and (max-width: 600px) {
   .part5 .conclusion .note p {
     padding: 100px 10px;
   }
 }
+
 .part5 .conclusion .note p::before {
   content: "❝";
   color: black;
 }
+
 .part5 .conclusion .note p::after {
   content: "❝";
   color: black;
 }
+
 .part5 .conclusion .note h6 {
   font-family: "font3", sans-serif;
   font-size: 2rem;
   font-weight: 100;
 }
+
 .part5 .conclusion .note span {
   color: rgb(166, 114, 69);
 }
@@ -746,6 +861,7 @@ footer {
   grid-template-columns: 50% 50%;
   text-align: left;
 }
+
 @media screen and (max-width: 900px) {
   footer {
     background: #212020;
@@ -753,19 +869,23 @@ footer {
     text-align: left;
   }
 }
+
 footer .left {
   padding: 70px 50px 0px 20%;
 }
+
 @media screen and (max-width: 900px) {
   footer .left {
     display: none;
   }
 }
+
 footer .left h6 {
   color: rgb(166, 114, 69);
   font-family: "font1", sans-serif;
   font-size: 3rem;
 }
+
 footer .left p {
   font-family: "font3", sans-serif;
   color: rgba(255, 255, 255, 0.603);
@@ -773,45 +893,56 @@ footer .left p {
   line-height: 35px;
   font-size: 0.8rem;
 }
+
 footer .right {
   padding: 85px 0px 0px 50px;
 }
+
 footer .right h6 {
   text-transform: uppercase;
   color: #fff;
   font-family: "font3", sans-serif;
   font-size: 1rem;
 }
+
 @media screen and (max-width: 900px) {
   footer .right h6 {
     font-size: 0.8rem;
   }
 }
+
 footer .right input {
   border: 1px solid rgba(255, 255, 255, 0.603);
   padding: 10px 75px 10px 15px;
   background: transparent;
   margin: 30px 0;
 }
+
 @media screen and (max-width: 900px) {
   footer .right input {
     padding: 5px 30px 5px 10px;
   }
 }
+
 footer .right .follow {
   display: grid;
   grid-template-columns: 25% 75%;
   flex-wrap: wrap;
 }
+
 footer .right .follow ul {
   display: flex;
 }
+
 footer .right .follow ul li {
   margin: 0 20px;
   color: rgba(255, 255, 255, 0.34);
 }
+
 @media screen and (max-width: 900px) {
   footer .right .follow ul li {
     margin: 0 10px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
