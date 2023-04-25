@@ -8,6 +8,7 @@
 
     @media screen and (max-width: 600px) {
         background: url(../img/bg-menu-01.jpg);
+
         background-repeat: no-repeat;
         background-size: 50% contain;
         background-position: bottom center;
@@ -16,7 +17,7 @@
 
 
 
-    
+
     .title-part2 {
         padding: 35px 0 0 0;
 
@@ -38,6 +39,7 @@
         @media screen and (max-width: 900px) {
             width: 80%;
         }
+
         @media screen and (max-width: 600px) {
             width: 90%;
         }
