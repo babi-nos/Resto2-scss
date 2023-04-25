@@ -200,7 +200,7 @@ header .title :last-child {
 }
 @media screen and (max-width: 600px) {
   .part2 {
-    background: url(../asset/img/bg-menu-01.jpg);
+    background: url(../img/bg-menu-01.jpg);
     background-repeat: no-repeat;
     background-size: 50% contain;
     background-position: bottom center;
@@ -505,7 +505,7 @@ header .title :last-child {
 }
 .part4 .evenements .event1 .img {
   position: relative;
-  background: url(/asset/img/event-01.jpg) center/cover;
+  background: url(../img/event-01.jpg) center/cover;
 }
 .part4 .evenements .event1 .img .date {
   position: absolute;
@@ -558,7 +558,7 @@ header .title :last-child {
 }
 .part4 .evenements .event2 {
   grid-area: b;
-  background: url(/asset/img/event-03.jpg) center/cover;
+  background: url(../img/event-03.jpg) center/cover;
   padding: 30px;
 }
 .part4 .evenements .event2 .card-right {
@@ -618,7 +618,7 @@ header .title :last-child {
 }
 .part4 .evenements .event3 .img {
   position: relative;
-  background: url(/asset/img/event-02.jpg) center/cover;
+  background: url(../img/event-02.jpg) center/cover;
 }
 .part4 .evenements .event3 .img .date {
   position: absolute;
@@ -682,7 +682,7 @@ header .title :last-child {
   bottom: 0%;
   width: 100%;
   height: 55%;
-  background: url(/asset/img/gmap.jpg);
+  background: url(../img/gmap.jpg);
   background-size: cover 100% 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -740,7 +740,7 @@ header .title :last-child {
 }
 
 footer {
-  background: url(/asset/img/bg-footer.jpg) center/cover;
+  background: url(../img/bg-footer.jpg) center/cover;
   height: 300px;
   display: grid;
   grid-template-columns: 50% 50%;
