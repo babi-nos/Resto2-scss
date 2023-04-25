@@ -1,0 +1,130 @@
+.part2 {
+    position: relative;
+    background: url(bg-menu-01.jpg) center/cover;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 150px;
+
+    @media screen and (max-width: 600px) {
+        background: url(/asset/img/bg-menu-01.jpg);
+        background-repeat: no-repeat;
+        background-size: 50% contain;
+        background-position: bottom center;
+
+    }
+
+
+
+    
+    .title-part2 {
+        padding: 35px 0 0 0;
+
+        h3 {
+            font-family: $font1;
+            color: $color4;
+            font-size: 2.5rem;
+        }
+    }
+
+    .list-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: auto;
+        color: $color1;
+        padding: 15px 0 50px 0;
+
+        @media screen and (max-width: 900px) {
+            width: 80%;
+        }
+        @media screen and (max-width: 600px) {
+            width: 90%;
+        }
+
+
+
+        li {
+            padding: 15px 0;
+            border-bottom: 1px solid white;
+            font-family: $font3;
+        }
+    }
+
+    .menu {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px auto 0px;
+        background: $color3;
+        padding: 0 20px 20px;
+        position: relative;
+
+        @media screen and (max-width: 900px) {
+            width: 90%;
+            padding: 0 0px 0px;
+        }
+
+        @media screen and (max-width: 600px) {
+            display: block;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            height: 5px;
+            width: 100%;
+            background: $color4;
+            margin: auto;
+        }
+
+
+        .items-menu {
+            margin: auto;
+            flex-basis: 48%;
+            display: grid;
+            grid-template-columns: 30% 50% 20%;
+            align-items: center;
+            text-align: center;
+            padding: 25px 0px;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.185);
+
+
+
+
+            img {
+                border-radius: 100px;
+                width: 75%;
+            }
+
+            .meal {
+                text-align: left;
+
+                h3 {
+                    font-family: $font3;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                }
+
+                p {
+                    font-family: $font3;
+                    font-weight: 100;
+                    font-size: 1rem;
+                    color: black;
+
+                }
+
+            }
+
+            p {
+                color: $color4;
+                font-family: $font2;
+            }
+
+
+        }
+    }
+}

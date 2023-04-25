@@ -115,10 +115,7 @@ header .title :last-child {
   line-height: 25px;
 }
 
-#main {
-  height: auto;
-}
-#main .part1 {
+.part1 {
   height: 70vh;
   min-height: 500px;
   display: grid;
@@ -128,23 +125,23 @@ header .title :last-child {
   background: #e4e4e4;
 }
 @media screen and (max-width: 900px) {
-  #main .part1 {
+  .part1 {
     grid-template-columns: 100%;
   }
 }
-#main .part1 .our-chef {
+.part1 .our-chef {
   margin: 20px;
   border: 1px dashed rgb(166, 114, 69);
   position: relative;
 }
-#main .part1 .our-chef h2 {
+.part1 .our-chef h2 {
   color: rgb(166, 114, 69);
   font-family: "font1", sans-serif;
   font-size: 2.5rem;
   position: relative;
   top: 20px;
 }
-#main .part1 .our-chef :nth-child(2) {
+.part1 .our-chef :nth-child(2) {
   position: relative;
   text-transform: uppercase;
   font-weight: 900;
@@ -152,10 +149,10 @@ header .title :last-child {
   font-size: 1.5rem;
   top: 0;
 }
-#main .part1 .our-chef img {
+.part1 .our-chef img {
   padding: 15px 0 0 0;
 }
-#main .part1 .our-chef :nth-child(4) {
+.part1 .our-chef :nth-child(4) {
   position: absolute;
   top: 40%;
   transform: translateY(-40%);
@@ -163,60 +160,62 @@ header .title :last-child {
   padding: 0 10px;
   font-family: "font3", sans-serif;
 }
-#main .part1 .our-chef .chef {
+.part1 .our-chef .chef {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 10px;
 }
-#main .part1 .our-chef .chef img {
+.part1 .our-chef .chef img {
   width: 30%;
   border-radius: 100px;
 }
-#main .part1 .our-chef .chef :nth-child(2) {
+.part1 .our-chef .chef :nth-child(2) {
   text-transform: none;
   font-size: 1.5rem;
   font-weight: 100;
 }
-#main .part1 .our-chef .chef :nth-child(3) {
+.part1 .our-chef .chef :nth-child(3) {
   text-transform: uppercase;
   font-family: "font2", sans-serif;
   color: #e4e4e4;
 }
-#main .part1 .picture {
-  background: url(/asset/img/store-01.jpg) center/cover;
+.part1 .picture {
+  background-image: url(/asset/img/store-01.jpg);
+  background-image: url(/);
 }
 @media screen and (max-width: 900px) {
-  #main .part1 .picture {
+  .part1 .picture {
     display: none;
   }
 }
-#main .part2 {
+
+.part2 {
   position: relative;
-  background: url(/asset/img/bg-menu-01.jpg) center/cover;
+  background: url(bg-menu-01.jpg) center/cover;
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: bottom;
   padding-bottom: 150px;
 }
 @media screen and (max-width: 600px) {
-  #main .part2 {
+  .part2 {
     background: url(/asset/img/bg-menu-01.jpg);
     background-repeat: no-repeat;
     background-size: 50% contain;
     background-position: bottom center;
   }
 }
-#main .part2 .title-part2 {
+.part2 .title-part2 {
   padding: 35px 0 0 0;
 }
-#main .part2 .title-part2 h3 {
+.part2 .title-part2 h3 {
   font-family: "font1", sans-serif;
   color: rgb(166, 114, 69);
   font-size: 2.5rem;
 }
-#main .part2 .list-menu {
+.part2 .list-menu {
   display: flex;
   justify-content: space-between;
   width: 50%;
@@ -225,21 +224,21 @@ header .title :last-child {
   padding: 15px 0 50px 0;
 }
 @media screen and (max-width: 900px) {
-  #main .part2 .list-menu {
+  .part2 .list-menu {
     width: 80%;
   }
 }
 @media screen and (max-width: 600px) {
-  #main .part2 .list-menu {
+  .part2 .list-menu {
     width: 90%;
   }
 }
-#main .part2 .list-menu li {
+.part2 .list-menu li {
   padding: 15px 0;
   border-bottom: 1px solid white;
   font-family: "font3", sans-serif;
 }
-#main .part2 .menu {
+.part2 .menu {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
@@ -249,17 +248,17 @@ header .title :last-child {
   position: relative;
 }
 @media screen and (max-width: 900px) {
-  #main .part2 .menu {
+  .part2 .menu {
     width: 90%;
     padding: 0 0px 0px;
   }
 }
 @media screen and (max-width: 600px) {
-  #main .part2 .menu {
+  .part2 .menu {
     display: block;
   }
 }
-#main .part2 .menu::before {
+.part2 .menu::before {
   position: absolute;
   content: "";
   top: 0;
@@ -269,7 +268,7 @@ header .title :last-child {
   background: rgb(166, 114, 69);
   margin: auto;
 }
-#main .part2 .menu .items-menu {
+.part2 .menu .items-menu {
   margin: auto;
   flex-basis: 48%;
   display: grid;
@@ -279,30 +278,31 @@ header .title :last-child {
   padding: 25px 0px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.185);
 }
-#main .part2 .menu .items-menu img {
+.part2 .menu .items-menu img {
   border-radius: 100px;
   width: 75%;
 }
-#main .part2 .menu .items-menu .meal {
+.part2 .menu .items-menu .meal {
   text-align: left;
 }
-#main .part2 .menu .items-menu .meal h3 {
+.part2 .menu .items-menu .meal h3 {
   font-family: "font3", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.95rem;
 }
-#main .part2 .menu .items-menu .meal p {
+.part2 .menu .items-menu .meal p {
   font-family: "font3", sans-serif;
   font-weight: 100;
   font-size: 1rem;
   color: black;
 }
-#main .part2 .menu .items-menu p {
+.part2 .menu .items-menu p {
   color: rgb(166, 114, 69);
   font-family: "font2", sans-serif;
 }
-#main .part3 {
+
+.part3 {
   position: relative;
   padding: 50px 0;
   display: grid;
@@ -314,53 +314,53 @@ header .title :last-child {
   min-width: 550px;
 }
 @media screen and (max-width: 900px) {
-  #main .part3 {
+  .part3 {
     display: block;
     width: 90%;
   }
 }
 @media screen and (max-width: 600px) {
-  #main .part3 {
+  .part3 {
     width: 100%;
     min-width: 250px;
   }
 }
-#main .part3 .left {
+.part3 .left {
   position: relative;
   background: black;
   padding: 20px;
 }
-#main .part3 .horraire {
+.part3 .horraire {
   color: white;
   display: grid;
   grid-template-rows: 25% 75%;
   border: 1px dashed rgba(255, 255, 255, 0.703);
   height: 100%;
 }
-#main .part3 .horraire .logo {
+.part3 .horraire .logo {
   place-self: center;
 }
-#main .part3 .horraire .logo h4 {
+.part3 .horraire .logo h4 {
   font-family: "font1", sans-serif;
   color: rgb(166, 114, 69);
   font-size: 2.5rem;
   font-weight: 100;
 }
-#main .part3 .horraire .logo p {
+.part3 .horraire .logo p {
   font-size: 1.5rem;
   font-family: "font2", sans-serif;
   text-transform: uppercase;
   -webkit-margin-before: -0.5em;
           margin-block-start: -0.5em;
 }
-#main .part3 .horraire .logo img {
+.part3 .horraire .logo img {
   position: relative;
   top: 15px;
 }
-#main .part3 .horraire .infos {
+.part3 .horraire .infos {
   padding: 25px 0 0 0;
 }
-#main .part3 .horraire .infos h4 {
+.part3 .horraire .infos h4 {
   text-transform: uppercase;
   color: rgb(166, 114, 69);
   padding: 25px 0;
@@ -369,31 +369,31 @@ header .title :last-child {
   font-family: "font2", sans-serif;
   font-weight: 100;
 }
-#main .part3 .horraire .infos p {
+.part3 .horraire .infos p {
   font-family: "font3", sans-serif;
   font-size: 0.8rem;
 }
-#main .part3 .reservation {
+.part3 .reservation {
   background: #e4e4e4;
   display: grid;
   grid-template-rows: 40% 35% 25%;
   position: relative;
 }
 @media screen and (max-width: 900px) {
-  #main .part3 .reservation {
+  .part3 .reservation {
     height: 600px;
     grid-template-rows: 30% 45% 25%;
   }
 }
-#main .part3 .reservation .title-reservation {
+.part3 .reservation .title-reservation {
   place-self: center;
 }
-#main .part3 .reservation .title-reservation h4 {
+.part3 .reservation .title-reservation h4 {
   color: rgb(166, 114, 69);
   font-family: "font1", sans-serif;
   font-size: 2.1rem;
 }
-#main .part3 .reservation .title-reservation p {
+.part3 .reservation .title-reservation p {
   position: relative;
   font-family: "font2", sans-serif;
   text-transform: uppercase;
@@ -401,18 +401,18 @@ header .title :last-child {
   font-weight: 900;
   top: -15px;
 }
-#main .part3 .reservation .input-reservation {
+.part3 .reservation .input-reservation {
   padding: 0 50px;
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
 }
 @media screen and (max-width: 900px) {
-  #main .part3 .reservation .input-reservation {
+  .part3 .reservation .input-reservation {
     display: block;
     padding: 0 25px;
   }
 }
-#main .part3 .reservation .input-reservation .input input {
+.part3 .reservation .input-reservation .input input {
   border: none;
   border-bottom: 2px solid rgba(128, 128, 128, 0.296);
   padding: 10px 0;
@@ -423,20 +423,20 @@ header .title :last-child {
   background: transparent;
 }
 @media screen and (max-width: 900px) {
-  #main .part3 .reservation .input-reservation .input input {
+  .part3 .reservation .input-reservation .input input {
     line-height: 25px;
   }
 }
-#main .part3 .reservation .input-reservation .black input::-moz-placeholder {
+.part3 .reservation .input-reservation .black input::-moz-placeholder {
   color: rgb(0, 0, 0);
 }
-#main .part3 .reservation .input-reservation .black input::placeholder {
+.part3 .reservation .input-reservation .black input::placeholder {
   color: rgb(0, 0, 0);
 }
-#main .part3 .reservation .btn {
+.part3 .reservation .btn {
   position: relative;
 }
-#main .part3 .reservation .btn button {
+.part3 .reservation .btn button {
   position: absolute;
   top: 0%;
   left: 50%;
@@ -452,13 +452,14 @@ header .title :last-child {
   font-size: 0.9rem;
 }
 @media screen and (max-width: 900px) {
-  #main .part3 .reservation .btn button {
+  .part3 .reservation .btn button {
     top: 50%;
     transform: translate(-50%, 0%);
     font-size: 0.7rem;
   }
 }
-#main .part4 {
+
+.part4 {
   position: relative;
   display: grid;
   grid-template-rows: 20% 80%;
@@ -466,19 +467,19 @@ header .title :last-child {
   padding: 50px 0 50px 0;
 }
 @media screen and (max-width: 935px) {
-  #main .part4 {
+  .part4 {
     display: none;
   }
 }
-#main .part4 .title-event {
+.part4 .title-event {
   place-self: center;
 }
-#main .part4 .title-event h5 {
+.part4 .title-event h5 {
   color: rgb(166, 114, 69);
   font-family: "font1", sans-serif;
   font-size: 3rem;
 }
-#main .part4 .title-event p {
+.part4 .title-event p {
   position: relative;
   text-transform: uppercase;
   font-size: 2.5rem;
@@ -487,7 +488,7 @@ header .title :last-child {
   color: white;
   top: -15px;
 }
-#main .part4 .evenements {
+.part4 .evenements {
   display: grid;
   grid-template-columns: 58% 42%;
   grid-template-rows: 1fr 1fr;
@@ -498,16 +499,16 @@ header .title :last-child {
   gap: 25px;
   padding: 35px 0 50px 0;
 }
-#main .part4 .evenements .event1 {
+.part4 .evenements .event1 {
   grid-area: a;
   display: grid;
   grid-template-columns: 25% 75%;
 }
-#main .part4 .evenements .event1 .img {
+.part4 .evenements .event1 .img {
   position: relative;
   background: url(/asset/img/event-01.jpg) center/cover;
 }
-#main .part4 .evenements .event1 .img .date {
+.part4 .evenements .event1 .img .date {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -517,38 +518,38 @@ header .title :last-child {
   height: 75px;
   width: 75px;
 }
-#main .part4 .evenements .event1 .img .date :first-child {
+.part4 .evenements .event1 .img .date :first-child {
   font-size: 1.2rem;
   font-family: "font2", sans-serif;
   font-weight: 900;
   padding: 10px 0 0 0;
 }
-#main .part4 .evenements .event1 .img .date :last-child {
+.part4 .evenements .event1 .img .date :last-child {
   position: relative;
   font-size: 0.9rem;
   font-family: "font3", sans-serif;
   font-weight: 100;
   top: -5px;
 }
-#main .part4 .evenements .event1 .infos {
+.part4 .evenements .event1 .infos {
   height: auto;
   background-color: #e4e4e4;
   text-align: left;
   padding: 0 0 0 35px;
 }
-#main .part4 .evenements .event1 .infos h5 {
+.part4 .evenements .event1 .infos h5 {
   position: relative;
   font-size: 1.5rem;
   font-family: "font3", sans-serif;
   padding: 35px 50px 35px 10px;
   font-weight: 100;
 }
-#main .part4 .evenements .event1 .infos :nth-child(2) {
+.part4 .evenements .event1 .infos :nth-child(2) {
   font-size: 1rem;
   font-family: "font3", sans-serif;
   color: rgba(0, 0, 0, 0.3490196078);
 }
-#main .part4 .evenements .event1 .infos :nth-child(3) {
+.part4 .evenements .event1 .infos :nth-child(3) {
   padding: 35px 0 0;
   font-size: 0.8rem;
   font-family: "font3", sans-serif;
@@ -556,54 +557,54 @@ header .title :last-child {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-#main .part4 .evenements .event2 {
+.part4 .evenements .event2 {
   grid-area: b;
   background: url(/asset/img/event-03.jpg) center/cover;
   padding: 30px;
 }
-#main .part4 .evenements .event2 .card-right {
+.part4 .evenements .event2 .card-right {
   position: relative;
   background-color: #e4e4e4;
   height: 100%;
   display: grid;
   grid-template-rows: 20% 80%;
 }
-#main .part4 .evenements .event2 .card-right .date {
+.part4 .evenements .event2 .card-right .date {
   background: #212020;
   color: white;
   height: 75px;
   width: 75px;
   margin: auto;
 }
-#main .part4 .evenements .event2 .card-right .date :first-child {
+.part4 .evenements .event2 .card-right .date :first-child {
   font-size: 1.2rem;
   font-family: "font2", sans-serif;
   font-weight: 900;
   padding: 10px 0 0 0;
 }
-#main .part4 .evenements .event2 .card-right .date :last-child {
+.part4 .evenements .event2 .card-right .date :last-child {
   position: relative;
   font-size: 0.9rem;
   font-family: "font3", sans-serif;
   font-weight: 100;
   top: -5px;
 }
-#main .part4 .evenements .event2 .card-right .infos {
+.part4 .evenements .event2 .card-right .infos {
   height: auto;
 }
-#main .part4 .evenements .event2 .card-right .infos h5 {
+.part4 .evenements .event2 .card-right .infos h5 {
   position: relative;
   font-size: 1.5rem;
   font-family: "font3", sans-serif;
   padding: 50px 50px 0 50px;
   font-weight: 100;
 }
-#main .part4 .evenements .event2 .card-right .infos :nth-child(2) {
+.part4 .evenements .event2 .card-right .infos :nth-child(2) {
   font-size: 1.2rem;
   font-family: "font3", sans-serif;
   color: rgba(0, 0, 0, 0.3490196078);
 }
-#main .part4 .evenements .event2 .card-right .infos :nth-child(3) {
+.part4 .evenements .event2 .card-right .infos :nth-child(3) {
   padding: 85px 0 0;
   font-size: 1rem;
   font-family: "font3", sans-serif;
@@ -611,16 +612,16 @@ header .title :last-child {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-#main .part4 .evenements .event3 {
+.part4 .evenements .event3 {
   grid-area: c;
   display: grid;
   grid-template-columns: 25% 75%;
 }
-#main .part4 .evenements .event3 .img {
+.part4 .evenements .event3 .img {
   position: relative;
   background: url(/asset/img/event-02.jpg) center/cover;
 }
-#main .part4 .evenements .event3 .img .date {
+.part4 .evenements .event3 .img .date {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -630,38 +631,38 @@ header .title :last-child {
   height: 75px;
   width: 75px;
 }
-#main .part4 .evenements .event3 .img .date :first-child {
+.part4 .evenements .event3 .img .date :first-child {
   font-size: 1.2rem;
   font-family: "font2", sans-serif;
   font-weight: 900;
   padding: 10px 0 0 0;
 }
-#main .part4 .evenements .event3 .img .date :last-child {
+.part4 .evenements .event3 .img .date :last-child {
   position: relative;
   font-size: 0.9rem;
   font-family: "font3", sans-serif;
   font-weight: 100;
   top: -5px;
 }
-#main .part4 .evenements .event3 .infos {
+.part4 .evenements .event3 .infos {
   height: auto;
   background-color: #e4e4e4;
   text-align: left;
   padding: 0 0 0 35px;
 }
-#main .part4 .evenements .event3 .infos h5 {
+.part4 .evenements .event3 .infos h5 {
   position: relative;
   font-size: 1.5rem;
   font-family: "font3", sans-serif;
   padding: 35px 50px 35px 10px;
   font-weight: 100;
 }
-#main .part4 .evenements .event3 .infos :nth-child(2) {
+.part4 .evenements .event3 .infos :nth-child(2) {
   font-size: 1rem;
   font-family: "font3", sans-serif;
   color: rgba(0, 0, 0, 0.3490196078);
 }
-#main .part4 .evenements .event3 .infos :nth-child(3) {
+.part4 .evenements .event3 .infos :nth-child(3) {
   padding: 35px 0 0;
   font-size: 0.8rem;
   font-family: "font3", sans-serif;
@@ -669,12 +670,13 @@ header .title :last-child {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-#main .part5 {
+
+.part5 {
   height: 600px;
   position: relative;
   margin: 50px auto 0 auto;
 }
-#main .part5::before {
+.part5::before {
   position: absolute;
   content: "";
   left: 0%;
@@ -687,54 +689,54 @@ header .title :last-child {
   background-position: center;
   z-index: -2;
 }
-#main .part5 .conclusion {
+.part5 .conclusion {
   background: #e4e4e4;
   width: 70%;
   margin: auto;
   height: 350px;
 }
 @media screen and (max-width: 900px) {
-  #main .part5 .conclusion {
+  .part5 .conclusion {
     width: 90%;
     height: 370px;
   }
 }
 @media screen and (max-width: 900px) {
-  #main .part5 .conclusion {
+  .part5 .conclusion {
     width: 90%;
     height: 410px;
   }
 }
-#main .part5 .conclusion .note img {
+.part5 .conclusion .note img {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 100px;
   width: 80px;
 }
-#main .part5 .conclusion .note p {
+.part5 .conclusion .note p {
   padding: 100px 100px;
   font-family: "font3", sans-serif;
 }
 @media screen and (max-width: 600px) {
-  #main .part5 .conclusion .note p {
+  .part5 .conclusion .note p {
     padding: 100px 10px;
   }
 }
-#main .part5 .conclusion .note p::before {
+.part5 .conclusion .note p::before {
   content: "❝";
   color: black;
 }
-#main .part5 .conclusion .note p::after {
+.part5 .conclusion .note p::after {
   content: "❝";
   color: black;
 }
-#main .part5 .conclusion .note h6 {
+.part5 .conclusion .note h6 {
   font-family: "font3", sans-serif;
   font-size: 2rem;
   font-weight: 100;
 }
-#main .part5 .conclusion .note span {
+.part5 .conclusion .note span {
   color: rgb(166, 114, 69);
 }
 

@@ -1,0 +1,91 @@
+.part1 {
+    height: 70vh;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: $color1;
+    position: relative;
+    background: $color3;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 100%;
+    }
+
+
+    .our-chef {
+        margin: 20px;
+        border: 1px dashed $color4;
+        position: relative;
+
+        h2 {
+            color: $color4;
+            font-family: $font1;
+            font-size: 2.5rem;
+            position: relative;
+            top: 20px;
+        }
+
+        :nth-child(2) {
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: $font2;
+            font-size: 1.5rem;
+            top: 0;
+        }
+
+        img {
+            padding: 15px 0 0 0;
+
+        }
+
+        :nth-child(4) {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-40%);
+            font-size: 1.3rem;
+            padding: 0 10px;
+            font-family: $font3;
+        }
+
+
+        .chef {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 10px;
+
+            img {
+                width: 30%;
+                border-radius: 100px;
+            }
+
+            :nth-child(2) {
+                text-transform: none;
+                font-size: 1.5rem;
+                font-weight: 100;
+            }
+
+            :nth-child(3) {
+                text-transform: uppercase;
+                font-family: $font2;
+                color: $color3;
+            }
+        }
+
+
+    }
+
+    .picture {
+        background-image: url(/asset/img/store-01.jpg) ;
+        background-image: url(/) ;
+
+        @media screen and (max-width: 900px) {
+            display: none;
+
+        }
+
+    }
+
+}
