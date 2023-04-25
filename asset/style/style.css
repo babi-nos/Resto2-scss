@@ -182,8 +182,7 @@ header .title :last-child {
   color: #e4e4e4;
 }
 .part1 .picture {
-  background-image: url(/asset/img/store-01.jpg);
-  background-image: url(/);
+  background: url(../img/store-01.jpg) center/cover;
 }
 @media screen and (max-width: 900px) {
   .part1 .picture {
@@ -193,7 +192,7 @@ header .title :last-child {
 
 .part2 {
   position: relative;
-  background: url(bg-menu-01.jpg) center/cover;
+  background: url(../img/bg-menu-01.jpg) center/cover;
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -201,7 +200,7 @@ header .title :last-child {
 }
 @media screen and (max-width: 600px) {
   .part2 {
-    background: url(/asset/img/bg-menu-01.jpg);
+    background: url(../asset/img/bg-menu-01.jpg);
     background-repeat: no-repeat;
     background-size: 50% contain;
     background-position: bottom center;
