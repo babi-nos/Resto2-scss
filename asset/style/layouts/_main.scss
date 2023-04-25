@@ -1,41 +1,772 @@
-#main{
+#main {
     height: auto;
 
-    .part1{
-        // width: 100%;
+    .part1 {
         height: 70vh;
+        min-height: 500px;
         display: grid;
         grid-template-columns: 50% 50%;
         background: $color1;
+        position: relative;
+        background: $color3;
+
+        @media screen and (max-width: 900px) {
+            grid-template-columns: 100%;
+        }
 
 
-        .our-chef{
-            background: $color1;
+        .our-chef {
             margin: 20px;
             border: 1px dashed $color4;
+            position: relative;
 
-            h2{
+            h2 {
                 color: $color4;
                 font-family: $font1;
                 font-size: 2.5rem;
-                padding: 50px 0 0 0;
+                position: relative;
+                top: 20px;
             }
 
-            :nth-child(2){
+            :nth-child(2) {
                 position: relative;
                 text-transform: uppercase;
                 font-weight: 900;
                 font-family: $font2;
                 font-size: 1.5rem;
-                top: -15px;
+                top: 0;
+            }
+
+            img {
+                padding: 15px 0 0 0;
+
+            }
+
+            :nth-child(4) {
+                position: absolute;
+                top: 40%;
+                transform: translateY(-40%);
+                font-size: 1.3rem;
+                padding: 0 10px;
+                font-family: $font3;
+            }
+
+
+            .chef {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+
+                img {
+                    width: 30%;
+                    border-radius: 100px;
+                }
+
+                :nth-child(2) {
+                    text-transform: none;
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                }
+
+                :nth-child(3) {
+                    text-transform: uppercase;
+                    font-family: $font2;
+                    color: $color3;
+                }
+            }
+
+
+        }
+
+        .picture {
+            background: url(/asset/img/store-01.jpg) center/cover;
+
+            @media screen and (max-width: 900px) {
+                display: none;
 
             }
 
         }
 
-        .picture{
-            background: url(/asset/img/store-01.jpg);
+    }
+
+    .part2 {
+        position: relative;
+        background: url(/asset/img/bg-menu-01.jpg) center/cover;
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 150px;
+
+        @media screen and (max-width: 600px) {
+            background: url(/asset/img/bg-menu-01.jpg);
+            background-repeat: no-repeat;
+            background-size: 50% contain;
+            background-position: bottom center;
+
         }
 
+
+
+
+        .title-part2 {
+            padding: 35px 0 0 0;
+
+            h3 {
+                font-family: $font1;
+                color: $color4;
+                font-size: 2.5rem;
+            }
+        }
+
+        .list-menu {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin: auto;
+            color: $color1;
+            padding: 15px 0 50px 0;
+
+            @media screen and (max-width: 900px) {
+                width: 80%;
+            }
+            @media screen and (max-width: 600px) {
+                width: 90%;
+            }
+
+
+
+            li {
+                padding: 15px 0;
+                border-bottom: 1px solid white;
+                font-family: $font3;
+            }
+        }
+
+        .menu {
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 25px auto 0px;
+            background: $color3;
+            padding: 0 20px 20px;
+            position: relative;
+
+            @media screen and (max-width: 900px) {
+                width: 90%;
+                padding: 0 0px 0px;
+            }
+
+            @media screen and (max-width: 600px) {
+                display: block;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                height: 5px;
+                width: 100%;
+                background: $color4;
+                margin: auto;
+            }
+
+
+            .items-menu {
+                margin: auto;
+                flex-basis: 48%;
+                display: grid;
+                grid-template-columns: 30% 50% 20%;
+                align-items: center;
+                text-align: center;
+                padding: 25px 0px;
+                border-bottom: 1px dashed rgba(0, 0, 0, 0.185);
+
+
+
+
+                img {
+                    border-radius: 100px;
+                    width: 75%;
+                }
+
+                .meal {
+                    text-align: left;
+
+                    h3 {
+                        font-family: $font3;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 0.95rem;
+                    }
+
+                    p {
+                        font-family: $font3;
+                        font-weight: 100;
+                        font-size: 1rem;
+                        color: black;
+
+                    }
+
+                }
+
+                p {
+                    color: $color4;
+                    font-family: $font2;
+                }
+
+
+            }
+        }
+    }
+
+    .part3 {
+        position: relative;
+        padding: 50px 0;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin: auto;
+        height: auto;
+        min-height: 500px;
+        width: 80%;
+        min-width: 550px;
+
+        @media screen and (max-width: 900px) {
+            display: block;
+            width: 90%;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            min-width: 250px;
+        }
+
+
+
+        .left {
+            position: relative;
+            background: black;
+            padding: 20px;
+        }
+
+        .horraire {
+            color: $color1;
+            display: grid;
+            grid-template-rows: 25% 75%;
+            border: 1px dashed rgba(255, 255, 255, 0.703);
+            height: 100%;
+
+
+            .logo {
+                place-self: center;
+
+                h4 {
+                    font-family: $font1;
+                    color: $color4;
+                    font-size: 2.5rem;
+                    font-weight: 100;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    font-family: $font2;
+                    text-transform: uppercase;
+                    margin-block-start: -0.5em;
+                }
+
+                img {
+                    position: relative;
+                    top: 15px;
+                }
+            }
+
+            .infos {
+                padding: 25px 0 0 0;
+
+
+                h4 {
+                    text-transform: uppercase;
+                    color: $color4;
+                    padding: 25px 0;
+                    // width: 80%;
+                    font-size: 1rem;
+                    margin: auto;
+                    font-family: $font2;
+                    font-weight: 100;
+
+                }
+
+                p {
+                    font-family: $font3;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+
+        .reservation {
+            background: $color3;
+            display: grid;
+            grid-template-rows: 40% 35% 25%;
+            position: relative;
+
+            @media screen and (max-width: 900px) {
+                height: 600px;
+                grid-template-rows: 30% 45% 25%;
+
+            }
+
+            .title-reservation {
+                place-self: center;
+
+                h4 {
+                    color: $color4;
+                    font-family: $font1;
+                    font-size: 2.1rem;
+                }
+
+                p {
+                    position: relative;
+                    font-family: $font2;
+                    text-transform: uppercase;
+                    font-size: 1.6rem;
+                    font-weight: 900;
+                    top: -15px;
+                }
+
+            }
+
+            .input-reservation {
+                padding: 0 50px;
+                display: grid;
+                grid-template-columns: 33.3% 33.3% 33.3%;
+
+                @media screen and (max-width: 900px) {
+                    display: block;
+                    padding: 0 25px;
+
+                }
+
+
+                .input {
+
+                    input {
+                        border: none;
+                        border-bottom: 2px solid rgba(128, 128, 128, 0.296);
+                        padding: 10px 0;
+                        font-family: $font3;
+                        font-weight: 900;
+                        min-width: 100px;
+                        width: 80%;
+                        background: transparent;
+
+                        @media screen and (max-width: 900px) {
+                            line-height: 25px;
+                        }
+                    }
+
+
+                }
+
+                .black {
+
+                    input {
+                        &::placeholder {
+                            color: rgb(0, 0, 0);
+                        }
+                    }
+                }
+            }
+
+
+            .btn {
+                position: relative;
+
+                button {
+                    position: absolute;
+                    top: 0%;
+                    left: 50%;
+                    transform: translate(-50%, -0%);
+                    padding: 15px 30px;
+                    border-radius: 30px;
+                    background: black;
+                    color: white;
+                    text-transform: uppercase;
+                    font-family: $font2;
+                    font-weight: 900;
+                    letter-spacing: 5px;
+                    font-size: 0.9rem;
+
+                    @media screen and (max-width: 900px) {
+                        top: 50%;
+                        transform: translate(-50%, -0%);
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .part4 {
+        position: relative;
+        display: grid;
+        grid-template-rows: 20% 80%;
+        min-height: 600px;
+        padding: 50px 0 50px 0;
+
+        @media screen and (max-width: 935px) {
+            display: none;
+        }
+
+
+        .title-event {
+            place-self: center;
+
+            h5 {
+                color: $color4;
+                font-family: $font1;
+                font-size: 3rem;
+            }
+
+            p {
+                position: relative;
+                text-transform: uppercase;
+                font-size: 2.5rem;
+                font-family: $font2;
+                font-weight: 900;
+                color: white;
+                top: -15px;
+            }
+        }
+
+        .evenements {
+            display: grid;
+            grid-template-columns: 58% 42%;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "a b"
+                "c b";
+
+            place-self: center;
+            width: 80%;
+            min-height: 450px;
+            gap: 25px;
+            padding: 35px 0 50px 0;
+
+
+
+            .event1 {
+                grid-area: a;
+                display: grid;
+                grid-template-columns: 25% 75%;
+
+                .img {
+                    position: relative;
+                    background: url(/asset/img/event-01.jpg) center/cover;
+
+                    .date {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        background: $color2;
+                        color: white;
+                        height: 75px;
+                        width: 75px;
+
+                        :first-child {
+                            font-size: 1.2rem;
+                            font-family: $font2;
+                            font-weight: 900;
+                            padding: 10px 0 0 0;
+
+                        }
+
+                        :last-child {
+                            position: relative;
+                            font-size: 0.9rem;
+                            font-family: $font3;
+                            font-weight: 100;
+                            top: -5px;
+                        }
+                    }
+                }
+
+                .infos {
+                    height: auto;
+                    background-color: $color3;
+                    text-align: left;
+                    padding: 0 0 0 35px;
+
+
+                    h5 {
+                        position: relative;
+                        font-size: 1.5rem;
+                        font-family: $font3;
+                        padding: 35px 50px 35px 10px;
+                        font-weight: 100;
+                    }
+
+                    :nth-child(2) {
+                        font-size: 1rem;
+                        font-family: $font3;
+                        color: #00000059;
+                        // font-weight: 900;
+                        // padding: 10px 0 0 0;
+
+                    }
+
+                    :nth-child(3) {
+                        padding: 35px 0 0;
+                        font-size: 0.8rem;
+                        font-family: $font3;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+
+                }
+
+
+            }
+
+            .event2 {
+                grid-area: b;
+                background: url(/asset/img/event-03.jpg) center/cover;
+                padding: 30px;
+
+                .card-right {
+                    position: relative;
+                    background-color: $color3;
+                    height: 100%;
+                    display: grid;
+                    grid-template-rows: 20% 80%;
+
+
+                    .date {
+                        background: $color2;
+                        color: white;
+                        height: 75px;
+                        width: 75px;
+                        margin: auto;
+
+
+                        :first-child {
+                            font-size: 1.2rem;
+                            font-family: $font2;
+                            font-weight: 900;
+                            padding: 10px 0 0 0;
+
+                        }
+
+                        :last-child {
+                            position: relative;
+                            font-size: 0.9rem;
+                            font-family: $font3;
+                            font-weight: 100;
+                            top: -5px;
+                        }
+                    }
+
+                    .infos {
+                        height: auto;
+
+
+                        h5 {
+                            position: relative;
+                            font-size: 1.5rem;
+                            font-family: $font3;
+                            padding: 50px 50px 0 50px;
+                            font-weight: 100;
+                        }
+
+                        :nth-child(2) {
+                            font-size: 1.2rem;
+                            font-family: $font3;
+                            color: #00000059;
+                            // font-weight: 900;
+                            // padding: 10px 0 0 0;
+
+                        }
+
+                        :nth-child(3) {
+                            padding: 85px 0 0;
+                            font-size: 1rem;
+                            font-family: $font3;
+                            font-weight: 900;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                        }
+
+                    }
+                }
+
+
+
+            }
+
+            .event3 {
+                grid-area: c;
+                display: grid;
+                grid-template-columns: 25% 75%;
+
+
+                .img {
+                    position: relative;
+                    background: url(/asset/img/event-02.jpg) center/cover;
+
+                    .date {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        background: $color2;
+                        color: white;
+                        height: 75px;
+                        width: 75px;
+
+
+                        :first-child {
+                            font-size: 1.2rem;
+                            font-family: $font2;
+                            font-weight: 900;
+                            padding: 10px 0 0 0;
+
+                        }
+
+                        :last-child {
+                            position: relative;
+                            font-size: 0.9rem;
+                            font-family: $font3;
+                            font-weight: 100;
+                            top: -5px;
+                        }
+                    }
+                }
+
+                .infos {
+                    height: auto;
+                    background-color: $color3;
+                    text-align: left;
+                    padding: 0 0 0 35px;
+
+
+                    h5 {
+                        position: relative;
+                        font-size: 1.5rem;
+                        font-family: $font3;
+                        padding: 35px 50px 35px 10px;
+                        font-weight: 100;
+                    }
+
+                    :nth-child(2) {
+                        font-size: 1rem;
+                        font-family: $font3;
+                        color: #00000059;
+                        // font-weight: 900;
+                        // padding: 10px 0 0 0;
+
+                    }
+
+                    :nth-child(3) {
+                        padding: 35px 0 0;
+                        font-size: 0.8rem;
+                        font-family: $font3;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+
+                }
+
+
+            }
+
+
+        }
+    }
+
+    .part5 {
+        height: 600px;
+        position: relative;
+        margin: 50px auto 0 auto;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0%;
+            bottom: 0%;
+            width: 100%;
+            height: 55%;
+            background: url(/asset/img/gmap.jpg);
+            background-size: cover 100% 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -2;
+        }
+
+        .conclusion {
+            background: $color3;
+            width: 70%;
+            margin: auto;
+            height: 350px;
+
+            @media screen and (max-width: 900px) {
+                width: 90%;
+                height: 370px;
+            }
+            @media screen and (max-width: 900px) {
+                width: 90%;
+                height: 410px;
+            }
+
+
+            .note {
+
+                img {
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 100px;
+                    width: 80px;
+                }
+
+                p {
+                    padding: 100px 100px;
+                    font-family: $font3;
+
+                    @media screen and (max-width: 600px) {
+                        padding: 100px 10px;
+                    }
+
+                    &::before {
+                        content: "❝";
+                        color: black;
+
+                    }
+
+                    &::after {
+                        content: "❝";
+                        color: black;
+
+                    }
+                }
+
+
+                h6 {
+                    font-family: $font3;
+                    font-size: 2rem;
+                    font-weight: 100;
+                }
+
+                span {
+                    color: $color4;
+                }
+            }
+        }
     }
 }

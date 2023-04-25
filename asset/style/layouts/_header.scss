@@ -1,11 +1,12 @@
-header{
+header {
     position: relative;
-    background: url(../img/bg-slider-06.jpg) center/cover ;
+    background: url(../img/bg-slider-06.jpg) center/cover;
     height: 100vh;
+    min-height: 500px;
     color: $color1;
 
 
-    nav{
+    nav {
         display: grid;
         grid-template-columns: 20% 60% 20%;
         text-align: center;
@@ -13,31 +14,53 @@ header{
         margin: auto;
         padding: 25px 0;
 
-        p{
+        @media screen and (max-width: 900px) {
+            grid-template-columns: 50% 50%;
+            text-align: left
+        }
+
+
+
+        p {
             font-family: $font1;
             font-size: 3rem;
             font-weight: 900;
         }
 
-        .nav-center{
+        .nav-center {
             display: flex;
             justify-content: space-around;
             align-items: center;
             text-transform: uppercase;
             font-family: $font3;
-            font-size: 0.9rem
+            font-size: 0.9rem;
+
+            @media screen and (max-width: 900px) {
+                display: none;
+
+            }
         }
 
-        .nav-right{
+        .nav-right {
             @include dFlex;
-            
-            i{
+
+            @media screen and (max-width: 900px) {
+                position: relative;
+                right: -50px;
+            }
+
+            @media screen and (max-width: 500px) {
+                position: relative;
+                right: 0px;
+            }
+
+            i {
                 padding: 0 10px;
             }
         }
     }
 
-    .title{
+    .title {
         position: relative;
         text-align: center;
         top: 20%;
@@ -47,21 +70,30 @@ header{
             font-family: $font1;
             font-size: 3rem;
             color: $color4;
+            
         }
-        h1{
+
+        h1 {
             position: relative;
             text-transform: uppercase;
             @include lSpace;
             font-family: $font2;
             font-size: 4rem;
             top: -10px;
+
+            @media screen and (max-width: 900px) {
+            font-size: 2.5rem;
+                
+            }
         }
-        :last-child{
+
+        :last-child {
             text-transform: uppercase;
             font-size: 0.8rem;
             @include lSpace;
             padding: 25px;
             color: rgba(255, 255, 255, 0.792);
+            line-height: 25px;
         }
     }
 
